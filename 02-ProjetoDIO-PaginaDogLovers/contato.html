@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Dog Lovers</title>
+
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form-tables.css">
+    <link rel="stylesheet" href="css/responsiv.css">
+
+
+
+</head>
+<body>
+    <div id="container-full">
+        <nav class="nav-bar">
+            <img src="img/icone2.png" alt="">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="horarios.html">Horario</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul> 
+        </nav>
+
+        <main id="main-container">
+            <header id="header">
+                <img src="img/contato.jpg" alt="Imagen Principal" class="img-header">
+            </header>
+    
+    
+    
+            <section class="content">
+                <h1>Entre em Contato:</h1>
+    
+                <h2>Preencha o formulario abaixo e nos envie uma mensagem!</h2>
+
+                <div class="container-form">
+                    <div class="contact-form">
+                        <form action="" method="post">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" required>
+    
+                            <label for="phone">Telefone:</label>
+                            <input type="number" id="phone" name="phone" required>
+    
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" required>
+    
+                            <label for="data">Data:</label>
+                            <input type="date" name="data" id="data" required>
+    
+                            <label for="servico">Serviço:</label>
+                            <select name="servico" id="servico">
+                                <option value="" selected>--- Selecione o Serviço Desejado ---</option>
+                                <option value="">Consultas Clinicas</option>
+                                <option value="">Odontologia Veterinária</option>
+                                <option value="">Banho e Tosa</option>
+                                <option value="">Pet Shop</option>
+                                <option value="">Cirurgias</option>
+                                <option value="">Internação</option>
+                                <option value="">Exames Laboratoriais</option>
+                                <option value="">Raio-X</option>
+                                <option value="">Ultrassom</option>
+                                <option value="">Vacinação e Desparasitação</option>
+                                <option value="">Alimentação e Nutrição</option>
+                                <option value="">Adestramento e Comportamento</option>
+                                <option value="">Outros</option>
+                                </select>
+    
+                            <label for="mensagem">Nos envie uma mensagem:</label>
+                            <textarea name="" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+    
+                            <button type="button" onclick="exibirMensagem('DDD')">Envia dados</button>
+                        </form>
+                    </div>
+                   
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470472.62593430997!2d-47.067895!3d-22.892434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8f6a2552649%3A0x7475001c58043536!2sCampinas%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1717021175975!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+            </section>
+    
+            <section id="container-footer">
+                <footer id="rodape">
+                    <img src="img/icone2.png" alt="" class="img-rodape">
+                    <ul class="nav-bar2">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="horarios.html">Horario</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    
+                    <div id="social-footer">
+                        <ul class="social-icons">
+        
+                            <li><a target="_blank" href="https://www.instagram.com/franciscodouglas3451/"><img src="img/instagram.png" alt=""></a></li>
+            
+            
+                            <li><a target="_blank" href="https://www.facebook.com/people/Francisco-Douglas/pfbid0221MWWA65JCFoZja3mNDv86MCp8TxdxFjZujKYtCHhLqH9mCVMoFsawzkJfWMW8qal/"><img src="img/facebook.png" alt=""></a></li>
+            
+            
+                            <li><a target="_blank" href="https://mail.google.com/mail/u/0/#inbox
+                                "><img src="img/gmail.png" alt=""></a></li>
+            
+            
+                            <li><a target="_blank" href="https://www.linkedin.com/in/francisco-dougllas/"><img src="img/linkedin.png" alt=""></a></li>
+            
+            
+                            <li><a target="_blank" href="https://github.com/FranciscoDougllas"><img src="img/github.png" alt=""></a></li>
+            
+                            <li><a target="_blank" href="https://franciscodougllas.github.io/Projetos_FrontEnd/"><img src="img/portfolio.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+            
+        </main>
+    </div>
+    <footer id="copy"><p>&copy;2024 Dog Lovers: Francisco Douglas</p></footer>
+
+    <script>
+        function exibirMensagem() {
+            alert("Dados enviados com sucesso!");
+        }
+    </script>
+</body>
+</html>
