@@ -7,19 +7,109 @@
 }
 
 body{
-    /* font-family: 'Edu AU VIC WA NT Pre', monospace; */
-    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
     max-width: 1250px;
-    margin: 0 auto;
+    gap: 10px;
+    background: linear-gradient(95deg, #f3f5f2, #f4f7f4, #fff);
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
 }
 
-#container-full{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 20px;
-}
+/* Navegacao Lateral Esquerda */
+#nav-bar{
+    display: block;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(95deg, #9bcf83, #6bb76b, #7ab373);
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.5));
 
-.nav-bar img,
-#header img{
+}
+#nav-bar img{
     width: 100%;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.5));    
+
+}
+
+.list-nav{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    align-items: center;
+
+    height: 60vh;
+}
+.list-nav li{
+    width: 100%;
+    text-align: center;
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.5));    
+}
+.list-nav a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+    transition: all 0.3s;
+}
+.list-nav a:hover{
+    color: #102060;
+    font-size: 2rem;
+}
+
+
+/* Imagem Principal da Pagina */
+.header img{
+    width: 100%;
+    max-height: 450px;
+    border-radius: 20px;
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.5));
+    margin-bottom: 10px;
+   
+}
+
+/* Rodape da Pagina */
+#footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(95deg, #9bcf83, #6bb76b, #7ab373);
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+#footer img{
+    max-width: 150px;
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+
+.list-footer li{
+    width: 100%;
+    list-style: none;
+    margin: 5px;
+    font-size: 1.2rem;
+
+}
+.list-footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+    transition: all 0.3s;
+}
+.list-footer a:hover{
+    color: #102060;
+}
+.list-footer strong{
+    color: #102060;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
