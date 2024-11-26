@@ -1,0 +1,101 @@
+.content{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    line-height: 3vh;
+}
+
+blockquote{
+    text-align: center;
+    background-color: rgb(217, 216, 160);
+    padding: 20px;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.services{
+    margin-top: 15px;
+}
+
+.pats-services{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.list-services{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.list-services img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 5px rgb(107, 113, 108));
+}
+
+.list-services li{
+    border: 1px solid #fff;
+    width: 270px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 20px;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    filter: drop-shadow(5px 5px 5px rgb(142, 192, 148));
+    background: linear-gradient(95deg, #9bcf83, #6bb76b, #7ab373);
+}
+
+.list-services li > span{
+    width: 100%;
+    height: 300PX;
+}
+
+.list-services li:hover{
+    border: 1px solid #fff;
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.diference{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.list-diference{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 2vw;
+}
+
+.diference h3{
+    margin-top: 3vh;
+}
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica PetLovers</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Barra de Navegação Lateral Esquerda com links para outras paginas-->
+    <nav id="nav-bar">
+        <img src="./img/icone2.png" alt="Icone Patinha de um Cachorro">
+
+        <ul class="list-nav">
+            <li><a href="./Home.html">Home</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./horarios.html">Horarios</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!--Main Container principal da Pagina completa-->
+    <main id="container">
+        <header class="header">
+            <img src="./img/contato.jpg" alt="Telefonista atendente">
+        </header>
+
+        <section class="content">
+            <h1>Entre em Contato:</h1>
+
+            <h2>Preencha o formulario abaixo e nos envie uma mensagem!</h2>
+
+            <div class="container-form">
+                <div class="contact-form">
+                    <form action="" method="post">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+
+                        <label for="phone">Telefone:</label>
+                        <input type="number" id="phone" name="phone" required>
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+
+                        <label for="data">Data:</label>
+                        <input type="date" name="data" id="data" required>
+
+                        <label for="servico">Serviço:</label>
+                        <select name="servico" id="servico">
+                            <option value="" selected>--- Selecione o Serviço Desejado ---</option>
+                            <option value="">Consultas Clinicas</option>
+                            <option value="">Odontologia Veterinária</option>
+                            <option value="">Banho e Tosa</option>
+                            <option value="">Pet Shop</option>
+                            <option value="">Cirurgias</option>
+                            <option value="">Internação</option>
+                            <option value="">Exames Laboratoriais</option>
+                            <option value="">Raio-X</option>
+                            <option value="">Ultrassom</option>
+                            <option value="">Vacinação e Desparasitação</option>
+                            <option value="">Alimentação e Nutrição</option>
+                            <option value="">Adestramento e Comportamento</option>
+                            <option value="">Outros</option>
+                            </select>
+
+                        <label for="mensagem">Nos envie uma mensagem:</label>
+                        <textarea name="" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+                        <button type="button" onclick="exibirMensagem('DDD')">Envia dados</button>
+                    </form>
+                </div>
+               
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d470472.62593430997!2d-47.067895!3d-22.892434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c8f6a2552649%3A0x7475001c58043536!2sCampinas%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1717021175975!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
+        <footer id="footer">
+            <img src="./img/icone2.png" alt="Patinha de um Cachorro">
+
+            <ul class="list-footer">
+                <li><strong>Redes Sociais</strong></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Linkedin</a></li>
+            </ul>
+
+            <ul class="list-footer">
+                <li><strong>Navegação</strong></li>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./horarios.html">Horarios</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>
