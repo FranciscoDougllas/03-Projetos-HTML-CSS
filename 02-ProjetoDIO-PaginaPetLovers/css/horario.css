@@ -1,0 +1,36 @@
+.container-table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+th, td{
+    text-align: left;
+    background-color: rgb(239, 233, 233);
+    padding: 5px;
+}
+
+thead, th{
+    background-color: rgb(52, 197, 26);
+    color: #fff;
+    font-weight: bold;
+}
+
+#diferenc{
+    margin: 10px;
+
+}
+#diferenc h3{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#diferenc ul{
+    gap: 10px;
+}
+#diferenc li{
+    list-style: none;
+    margin-left: 10px;
+    gap: 10px;
+}
