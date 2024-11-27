@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0c1014;
+    color: #ffff;
+    width: 90%;
+    max-width: 960px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-title{
+    font-size: 4rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: #05080a;
+}
+
+.header_logo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header_nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    font-size: 1.2rem;
+}
+.header_nav ul li a{
+    text-decoration: none;
+    color: #ffff;
+    padding: 10px;
+}
+
+
+.header_nav ul li:nth-child(2){
+    background-color: #cbe300;
+    padding: 10px;
+    border-radius: 10px;
+}
+.header_nav ul li:nth-child(2):hover{
+    background-color: #8babe8;
+}
+
+.header_nav ul li:nth-child(2) a{
+    color: #05080a;
+}
+.header_nav ul li a:hover{
+    background-color: #8babe8;
+    border-radius: 10px;
+}
+
+
+/* Container dos Cards */
+.pricing{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.pricing-plan{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f262c;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px rgb(49, 52, 56);
+}
+
+.class-plan_title{
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2pxs;
+}
+
+.prince-plan_price {
+    font-size: 1.5rem;
+}
+
+.princing-plan_features{
+    margin:  0 0 35px;
+    color: #b5b5b5;
+    padding: 16px;
+    line-height: 1.8;
+}
+.princing-plan_features li::marker{
+    color: #cbe300;
+}
+
+
+.pricing-plan_cta{
+    text-decoration: none;
+    background-color: #cbe300;
+    color: #0c1014;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.pricing-plan_cta:hover{
+    background-color: transparent;
+    outline: #fff 1px solid;
+    color: #fff;
+}

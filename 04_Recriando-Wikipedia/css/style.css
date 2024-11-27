@@ -1,0 +1,142 @@
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 70vw;
+}
+
+/* Cabecalho */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #222937;
+    color: #fff;
+}
+header img{
+    width: 120px;
+    filter: drop-shadow(0 2px 5px #f3f3f5);
+    border-radius: 100%;
+}
+header h1{
+    color: rgb(231, 232, 234);
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+}
+
+/* Container e pagina principal */
+#container{
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    width: 100%;
+}
+#container img{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* Navagacao */
+.sidebar, 
+.anchors{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+}
+.sidebar li,
+.anchors li{
+    list-style: none;
+}
+
+.sidebar h2, 
+.anchors h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #222937;
+    text-align: center;
+}
+
+.sidebar a,
+.anchors a{
+    text-decoration: none;
+    color: #3a4966;
+}
+.sidebar li,
+.anchors li{
+    margin-bottom: 15px;
+}
+
+#personagens{
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+/* Conteudo da Pagina */
+.conteudo{
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    }
+.conteudo h2{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #222937;
+    text-align: center;
+}
+
+#analiseprofunda, h4{
+    margin-top: 20px;
+}
+.conteudo p{
+    margin-bottom: 10px;
+}
+
+#h3-todos{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #1646a7;
+    font-size: 1.2rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10vh; 
+    margin-bottom: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer a{
+    text-decoration: none;
+    color: #1646a7;
+    margin: 10px;
+    border: 1px solid #1646a7;
+    padding: 10px;
+    border-radius: 20px;
+}
+footer a:hover{
+    background-color: #1646a7;
+    color: #fff;
+}
+footer p{
+    margin-bottom: 20xp;
+}
