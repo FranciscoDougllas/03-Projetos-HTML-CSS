@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    gap : 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #727272;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+nav .active{
+    background-color: #39aae1;
+    color: #fff;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color: #39aae1;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#banner{
+    background-image: url(../img/medico.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    text-align: right;
+}
+.banner_headline h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+.banner_headline h2{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+.banner_options{
+    height: 210px;
+    display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+.banner1 button,
+.banner2 button,
+.banner3 button{
+    background-color: #39aae1;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+
+.banner1{
+    background-color: #39a9e187;
+
+}
+.banner2{
+    background-color: #0077c763;
+}
+.banner3{
+    background-color: #2b4c9983;
+}
+.banner_title{
+    font-size: 21px;
+}
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_options a{
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+.banner_options a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section{
+    flex: 2;
+}
+#geral aside{
+    flex: 1;
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar{
+    width: 50px;
+    height: 3px;
+    background-color: #39aae1;
+    margin-top: 10px
+}
+
+.widget_title_bar2{
+    width: 50px;
+    height: 3px;
+    background-color: #39aae1;
+    margin-top: 10px
+}

@@ -15,7 +15,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: #333333;
     background: linear-gradient(45deg, #000000, rgb(44, 52, 57), hsl(253, 21%, 22%), #000000);
 
 }
@@ -38,13 +38,14 @@ nav a {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid orange;
+    border: 2px solid rgb(122, 189, 40);
     padding: 10px 20px;
     border-radius: 5px;
 }
 nav a:hover{
-    color: #8fcb0e;
-    background-color: #333;
+    color: #000;
+    border-color: #fff;
+    background-color: #b2b5c5;
 }
 
 
