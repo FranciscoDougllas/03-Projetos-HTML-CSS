@@ -49,7 +49,7 @@ body {
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 550px;
     display: flex;
     justify-content: center;
 }
