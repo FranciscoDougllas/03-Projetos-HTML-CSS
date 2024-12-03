@@ -45,11 +45,11 @@ body {
 
 #banner{
     background-image: url(../img/medico.jpg);
-    width: 100%;
+    width: 100vw;
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 550px;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
