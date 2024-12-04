@@ -45,7 +45,8 @@ body {
 
 #banner{
     background-image: url(../img/medico.jpg);
-    width: 100vw;
+    min-width: 400px;
+    max-width: 100%;
     background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
