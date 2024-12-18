@@ -64,12 +64,13 @@ body{
 }
 
 #contain{
-    max-width: 1450px;
+    max-width: 1250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 10px auto;
+    padding: 10px;
     gap: 20px;
 }
 h1{
@@ -95,8 +96,57 @@ figure img{
 section{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
 }
+
+
+
+
+
+
+
+/* Definindo a animação de surgir */
+@keyframes surgir {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo base da imagem */
+.imagen {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(100%); /* Posicionada fora da tela */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+/* Estilo quando a imagem entra na visualização */
+.imagen.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: surgir 1s ease-out;
+}
+
+/* Desativar a animação para telas menores que 800px */
+@media (max-width: 800px) {
+    .imagen {
+        opacity: 1; /* Visível */
+        transform: translateY(0); /* Posição normal */
+        transition: none; /* Sem transições */
+        animation: none; /* Sem animações */
+    }
+}
+
+
+
+
+
+
+
 section blockquote{
     text-align: center;
     background-color: rgb(217, 216, 160);
@@ -116,9 +166,9 @@ section h2{
     margin-bottom: 2vh;
 }
 section p{
-    text-align: left;
-    margin: 20px;
+    margin-bottom: 10px;
 }
+
 #historia,
 #fundamentos,
 #elementos,
@@ -147,9 +197,15 @@ section p{
         display: flex;
         flex-direction: column;
     }
+    section{
+        margin-bottom: 5vh;
+    }
     h1{
         text-align: center;
         font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
     }
    
     bloquequote{
